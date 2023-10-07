@@ -1,6 +1,6 @@
 import random
 import time
-
+i = 1
 words = [
     "Морковка",
     "Перец",
@@ -76,3 +76,11 @@ def random_word():
 def timer(n):
     for i in range(n):
         time.sleep(1)
+    if i == n:
+        i = 0
+    return i
+
+def sravnenie(word,random_w):
+    return word == random_w
+    
+
